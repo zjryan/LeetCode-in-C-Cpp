@@ -2,6 +2,8 @@ struct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2) {
     struct ListNode* L1 = l1;
     struct ListNode* L2 = l2;
     struct ListNode* resultList = NULL;
+    struct ListNode* tmpL1;
+    struct ListNode* tmpL2;
     if(L1 != NULL && L2 != NULL){
         if(L1->val < L2->val){
             resultList = L1;
@@ -16,9 +18,6 @@ struct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2) {
     else if(L2 == NULL){
         return L1;
     }
-    
-    struct ListNode* tmpL1;
-    struct ListNode* tmpL2;
     
     while(L1 != NULL && L2 != NULL){
         //assert L1 and L2 are not NULL
