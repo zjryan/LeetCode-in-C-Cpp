@@ -1,3 +1,4 @@
+//should use binary search
 int findMin(int* nums, int numsSize) {
     int i;
     int min = nums[0];
