@@ -34,9 +34,9 @@ public:
         for(int i = verint2.size(); i < len; i++)
             verint2.push_back(0);
         for(int i = 0; i < len; i++){
-            if(compare(verint1[i], verint2[i]) == 0) continue;
-            if(compare(verint1[i], verint2[i]) == 1) return 1;
-            if(compare(verint1[i], verint2[i]) == -1) return -1;
+            int cmp = compare(verint1[i], verint2[i]);
+            if(cmp == 0) continue;
+            else return cmp;
         }
         return 0;
     }
