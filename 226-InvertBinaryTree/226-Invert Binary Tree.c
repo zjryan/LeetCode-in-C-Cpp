@@ -6,6 +6,7 @@
  *     struct TreeNode *right;
  * };
  */
+ //recursive version
 struct TreeNode* invertTree(struct TreeNode* root) {
     struct TreeNode* T = root;
     if(T == NULL) return NULL;
