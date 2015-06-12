@@ -1,4 +1,4 @@
-class Solution {
+class Solution {//rewrite in C version
 public:
     int removeDuplicates(vector<int>& nums) {
         auto end_unique = unique(nums.begin(), nums.end());
